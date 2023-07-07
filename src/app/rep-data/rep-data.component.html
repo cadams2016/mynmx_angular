@@ -1,0 +1,49 @@
+<section class="cards">
+  <div class="max-w-sm lg:flex" *ngFor="let rep of filteredReps">
+    <div
+      class="bg-cover rounded-t lg:rounded-t-none lg:rounded-l card_contact"
+      title="Woman holding a mug"
+    >
+      <div class="contact">
+        <span class="contact_name">{{ posts.fname }} {{ posts.lname }}</span>
+        <span class="contact_title">{{ posts.position }}</span>
+        <span class="contact_number">{{ posts.cell }}</span>
+        <span class="contact_email">
+          <a
+            target="email"
+            href="mailto:{{ posts.email }}?subject=RE:Obi-wan&body={{
+              posts.fname
+            }} {{ posts.lname }},"
+            >{{ posts.email }}</a
+          >
+        </span>
+      </div>
+      <div>
+        <img
+          src="https://api-als2.nutramax.com/assets/{{
+            posts.profile_image
+          }}.jpg?width=100&height=100&fit=cover"
+          class="borderCircle"
+        />
+      </div>
+    </div>
+    <div
+      class="
+        border-r border-b border-l border-gray-400
+        lg:border-l-0 lg:border-t lg:border-gray-400
+        bg-green
+        rounded-b
+        lg:rounded-b-none lg:rounded-r
+        flex flex-col
+        justify-between
+        leading-normal
+      "
+    >
+      <div class="card">
+        <p class="text-gray-700 text-center flex flex-col card_text">
+          My Nutramax Representative
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

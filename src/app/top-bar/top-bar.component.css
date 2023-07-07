@@ -1,0 +1,68 @@
+.mainNav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 80px;
+}
+
+.mainNav__nav {
+  background: #eaeaea;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: -5px 5px 20px -5px #0000001f;
+  border-right: solid 1px #f3f3f3;
+}
+
+.mainNav__logo {
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo__img {
+  height: 61px;
+}
+
+.mainNav__profile {
+  margin: 5px 15px;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.dev {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .mainNav__nav {
+    background-color: rgb(70, 70, 70);
+    box-shadow: -5px 5px 20px -5px #0000001f;
+    border-right: solid 1px #f3f3f3;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .mainNav__nav {
+    box-shadow: -5px 5px 20px -5px #0000001f;
+    border-right: solid 1px #f3f3f3;
+  }
+} */
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
