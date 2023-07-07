@@ -8,13 +8,17 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LeftNavrComponent } from './left-navr/left-navr.component';
 import { RepDataComponent } from './rep-data/rep-data.component';
+import { IsMylogin } from './nmx-login/nmx-login.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
+    RouterModule.forRoot([
+      { path: '', component: IsMylogin },
+      { path: 'dashboard', component: ProductListComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
@@ -22,10 +26,11 @@ import { RepDataComponent } from './rep-data/rep-data.component';
     ProductListComponent,
     LeftNavrComponent,
     RepDataComponent,
+    IsMylogin,
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
 
 /*
 Copyright Google LLC. All Rights Reserved.

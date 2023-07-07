@@ -1,0 +1,55 @@
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.card_text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-size: 18px;
+  padding: 14px;
+  background-color: var(--nmx-green);
+  color: antiquewhite;
+}
+
+.card_contact {
+  width: 100%;
+  background: #d2d4d3;
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    #e5e5e5 20%,
+    #d2d4d3 60%,
+    #e0e2e1 90%,
+    #dbdbdb 100%
+  );
+  /* background-image: linear-gradient(to right, #ffffffe6 70%, #ffffffb3 80%, #ebebeb54 90%), url(/images/map-stock2.png); */
+  background-size: 100%;
+  background-position: 0 0, top right;
+  background-repeat: no-repeat;
+  /* box-shadow: inset -3px -5px 3px 2px #bbbbbb; */
+  padding: 20px 20px 0 20px;
+  min-height: 150px;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact_name {
+  font-weight: bold;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+  width: 111px;
+}
