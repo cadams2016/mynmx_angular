@@ -156,7 +156,23 @@ button:disabled {
   background-color: #eeeeee;
 }
 
+nav#deskNav {
+  display: none;
+}
+
+#mainNav {
+  display: block;
+}
+
 @media (min-width: 1024px) {
+  #mainNav {
+    display: none;
+  }
+
+  nav#deskNav {
+    display: block
+  }
+
   .lg\:flex {
     display: flex;
     flex-flow: column;
@@ -206,4 +222,10 @@ button:disabled {
   .lg\:w-48 {
     width: 100%;
   }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }

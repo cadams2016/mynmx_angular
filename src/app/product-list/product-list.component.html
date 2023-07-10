@@ -1,8 +1,7 @@
-<section class="cards" *ngFor="let product of products">
-  <a [title]="product.name" [href]="product.link">
+<section class="cards">
+  <a [title]="product.name" [href]="product.link" *ngFor="let product of products">
     <div class="max-w-sm lg:flex">
-      <div
-        class="
+      <div class="
           h-48
           lg:h-auto
           flex-none
@@ -11,13 +10,10 @@
           lg:rounded-t-none lg:rounded-l
           text-center
           overflow-hidden
-        "
-        title="{{ product.name }}"
-      >
+        " title="{{ product.name }}">
         <img src="{{ product.img }}" alt="" />
       </div>
-      <div
-        class="
+      <div class="
           border-r border-b border-l border-gray-400
           lg:border-l-0 lg:border-t lg:border-gray-400
           bg-green
@@ -26,8 +22,7 @@
           flex flex-col
           justify-between
           leading-normal
-        "
-      >
+        ">
         <div class="card">
           <p class="text-gray-700 text-center flex flex-col card_text">
             {{ product.name }}
@@ -36,4 +31,5 @@
       </div>
     </div>
   </a>
+  <app-rep-data></app-rep-data>
 </section>
