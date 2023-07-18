@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './resources.service';
 
-
 @Component({
   selector: 'app-product-resources',
   templateUrl: './product-resources.component.html',

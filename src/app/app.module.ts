@@ -7,9 +7,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LeftNavrComponent } from './left-navr/left-navr.component';
-import { RepDataComponent } from './rep-data/rep-data.component';
 import { IsMylogin } from './nmx-login/nmx-login.component';
+import { RepDataComponent } from './rep-data/rep-data.component';
 import { ProductResourcesComponent } from './product-resources/product-resources.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { ProductResourcesComponent } from './product-resources/product-resources
     RepDataComponent,
     IsMylogin,
     ProductResourcesComponent,
+    ProductDetailsComponent,
   ],
   bootstrap: [AppComponent],
 })
