@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LeftNavrComponent } from './left-navr/left-navr.component';
 import { RepDataComponent } from './rep-data/rep-data.component';
 import { IsMylogin } from './nmx-login/nmx-login.component';
+import { ProductResourcesComponent } from './product-resources/product-resources.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { IsMylogin } from './nmx-login/nmx-login.component';
     RouterModule.forRoot([
       { path: '', component: IsMylogin },
       { path: 'dashboard', component: ProductListComponent },
-      { path: 'product-resources', component: ProductListComponent },
+      { path: 'product-resources', component: ProductResourcesComponent },
     ]),
   ],
   declarations: [
@@ -28,7 +29,8 @@ import { IsMylogin } from './nmx-login/nmx-login.component';
     LeftNavrComponent,
     RepDataComponent,
     IsMylogin,
+    ProductResourcesComponent,
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
