@@ -18,6 +18,7 @@ import { IsMylogin } from './nmx-login/nmx-login.component';
     RouterModule.forRoot([
       { path: '', component: IsMylogin },
       { path: 'dashboard', component: ProductListComponent },
+      { path: 'product-resources', component: ProductListComponent },
     ]),
   ],
   declarations: [
@@ -31,9 +32,3 @@ import { IsMylogin } from './nmx-login/nmx-login.component';
   bootstrap: [AppComponent],
 })
 export class AppModule { }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

@@ -21,7 +21,7 @@ export const products = [
   {
     id: 3,
     name: 'Product Resources',
-    link: 'https://www.vet-ez-order.com/bus/pet-products-c226.aspx',
+    link: '/product-resources',
     img: 'https://d1wu473qb3450t.cloudfront.net/img/tile-3-bg.png',
   },
 ];
