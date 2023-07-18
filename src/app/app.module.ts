@@ -21,6 +21,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
       { path: '', component: IsMylogin },
       { path: 'dashboard', component: ProductListComponent },
       { path: 'product-resources', component: ProductResourcesComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
     ]),
   ],
   declarations: [

@@ -1,6 +1,6 @@
 <div class="contaner2">
   <div class="main" *ngFor="let pr of filteredProd">
-    <a href="#tocome">
+    <a href="#tocome" [routerLink]="['/products', pr.id]">
       <div class="brand-logo">
         <img alt={{pr.productName}} src="https://api-als2.nutramax.com/assets/{{pr.productLogo}}">
       </div>
