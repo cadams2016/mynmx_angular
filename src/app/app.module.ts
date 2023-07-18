@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LeftNavrComponent } from './left-navr/left-navr.component';
 import { RepDataComponent } from './rep-data/rep-data.component';
+import { ProductResourcesComponent } from './product-resources/product-resources.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { RepDataComponent } from './rep-data/rep-data.component';
     ProductListComponent,
     LeftNavrComponent,
     RepDataComponent,
+    ProductResourcesComponent,
   ],
   bootstrap: [AppComponent],
 })
