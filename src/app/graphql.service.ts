@@ -4,10 +4,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
+
 export class PostService {
   private url = 'https://api-als2.nutramax.com/items/vet_sales_roster?limit=-1';
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
 
   getPosts() {
     const headers = new HttpHeaders({

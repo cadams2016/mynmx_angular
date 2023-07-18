@@ -33,4 +33,4 @@ import { ProductResourcesComponent } from './product-resources/product-resources
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

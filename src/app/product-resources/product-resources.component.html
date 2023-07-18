@@ -1,1 +1,12 @@
-<p>product-resources works!</p>
+<div class="contaner2">
+  <div class="main" *ngFor="let pr of filteredProd">
+    <a href="#tocome">
+      <div class="brand-logo">
+        <img alt={{pr.productName}} src="https://api-als2.nutramax.com/assets/{{pr.productLogo}}">
+      </div>
+      <div class="product-shot">
+        <img alt={{pr.productName}} src="https://api-als2.nutramax.com/assets/{{pr.productCornucopia}}">
+      </div>
+    </a>
+  </div>
+</div>
