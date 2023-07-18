@@ -7,6 +7,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LeftNavrComponent } from './left-navr/left-navr.component';
+import { IsMylogin } from './nmx-login/nmx-login.component';
 import { RepDataComponent } from './rep-data/rep-data.component';
 import { ProductResourcesComponent } from './product-resources/product-resources.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
@@ -16,7 +17,11 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
+    RouterModule.forRoot([
+      { path: '', component: IsMylogin },
+      { path: 'dashboard', component: ProductListComponent },
+      { path: 'product-resources', component: ProductResourcesComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
@@ -24,15 +29,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ProductListComponent,
     LeftNavrComponent,
     RepDataComponent,
+    IsMylogin,
     ProductResourcesComponent,
     ProductDetailsComponent,
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+export class AppModule { }

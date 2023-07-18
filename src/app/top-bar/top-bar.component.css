@@ -7,6 +7,22 @@
   height: 80px;
 }
 
+nav#deskNav {
+  background: #fff;
+}
+
+.deskNav_desk {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deskNav__desk {
+  padding: 10px;
+  background: #f3f3f3;
+}
+
 .mainNav__nav {
   background: #eaeaea;
   width: 80px;
@@ -45,24 +61,3 @@
   justify-content: center;
   margin: 15px;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  .mainNav__nav {
-    background-color: rgb(70, 70, 70);
-    box-shadow: -5px 5px 20px -5px #0000001f;
-    border-right: solid 1px #f3f3f3;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .mainNav__nav {
-    box-shadow: -5px 5px 20px -5px #0000001f;
-    border-right: solid 1px #f3f3f3;
-  }
-} */
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

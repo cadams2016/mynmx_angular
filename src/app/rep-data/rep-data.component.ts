@@ -10,17 +10,22 @@ export class RepDataComponent implements OnInit {
   posts: any;
   filteredReps: any;
 
-  constructor(private service: PostService) {}
+  constructor(private service: PostService) { }
 
   ngOnInit() {
-    this.filteredReps = this.posts.filter((t: any) => t.fname === 'Lawrinda');
-    this.service.getPosts().subscribe((res) => {
-      try {
-        this.posts = res;
-        console.log(res);
-      } catch (error) {
+    this.service.getPosts().subscribe(
+      (res) => {
+        try {
+          console.log(res); // Check the value and type of res
+          this.posts = res;
+          this.filteredReps = this.posts.data.filter((t: any) => t.fname === 'Lawrinda');
+        } catch (error) {
+          console.log(error);
+        }
+      },
+      (error) => {
         console.log(error);
       }
-    });
+    );
   }
 }

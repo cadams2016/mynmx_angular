@@ -27,68 +27,15 @@ nav {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
-    flex-flow: column;
-  }
-
-  .lg\:h-auto {
-    height: auto;
-  }
-
-  .lg\:rounded-b-none {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-
-  .lg\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-  }
-
-  .lg\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
-  }
-
-  .lg\:rounded-t-none {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-  }
-
-  .lg\:border-l-0 {
-    border-left-width: 0px;
-  }
-
-  .lg\:border-t {
-    border-top-width: 1px;
-  }
-
-  .lg\:border-gray-400 {
-    --tw-border-opacity: 1;
-    border-color: rgb(156 163 175 / var(--tw-border-opacity));
-  }
-
-  .max-w-sm {
-    max-width: 20rem;
-  }
-
-  .lg\:w-48 {
-    width: 100%;
-  }
-}
-
 body {
   margin: 0;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-}
-
-router-outlet + * {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   padding: 0 16px;
 }
 
@@ -209,8 +156,76 @@ button:disabled {
   background-color: #eeeeee;
 }
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+nav#deskNav {
+  display: none;
+}
+
+#mainNav {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  #mainNav {
+    display: none;
+  }
+
+  nav#deskNav {
+    display: block
+  }
+
+  .lg\:flex {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:rounded-b-none {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .lg\:rounded-l {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .lg\:rounded-r {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .lg\:rounded-t-none {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .lg\:border-l-0 {
+    border-left-width: 0px;
+  }
+
+  .lg\:border-t {
+    border-top-width: 1px;
+  }
+
+  .lg\:border-gray-400 {
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  }
+
+  .max-w-sm {
+    max-width: 20rem;
+  }
+
+  .lg\:w-48 {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
